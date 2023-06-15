@@ -1,0 +1,244 @@
+[
+    {
+        "intent": "greeting",
+        "patterns": ["hello", "hi", "hey"],
+        "responses": ["Hello!", "Hi there!", "Greetings!"]
+    },
+    {
+        "intent": "goodbye",
+        "patterns": ["bye", "goodbye", "see you"],
+        "responses": ["Goodbye!", "Farewell!", "See you later!"]
+    },
+    {
+        "intent": "joke",
+        "patterns": ["tell me a joke", "share a joke"],
+        "responses": ["Why don't scientists trust atoms?", "How do you organize a space party?", "Why don't skeletons fight each other?"]
+    },
+    
+    {
+        "intent": "about",
+        "patterns": [
+        "What is The Longevity Playbook?"
+        ],
+        "responses": [
+        "The Longevity Playbook is a program created by Dr. Mike Roizen based on the science of longevity."
+        ]
+    },
+    {
+        "intent": "program_features",
+        "patterns": [
+        "What does the program include?",
+        "What are the features of the program?"
+        ],
+        "responses": [
+        "The program includes videos, lessons, quizzes, and brain games to help form new daily habits."
+        ]
+    },
+    {
+        "intent": "daily_time",
+        "patterns": [
+        "How much time is required for the program?",
+        "How many minutes a day does the program require?"
+        ],
+        "responses": [
+        "The program requires only 5 to 15 minutes a day."
+        ]
+    },
+    {
+        "intent": "app_benefits",
+        "patterns": [
+        "How does The Longevity Playbook app help?",
+        "What are the benefits of The Longevity Playbook app?"
+        ],
+        "responses": [
+        "The Longevity Playbook app helps improve various aspects of health."
+        ]
+    },
+    {
+        "intent": "pillars",
+        "patterns": [
+        "What are the 5 Pillars of longevity?",
+        "What aspects does the program focus on?"
+        ],
+        "responses": [
+        "The program focuses on stress management, diet, brain health, exercise, and sleep as the 5 Pillars of longevity."
+        ]
+    },
+    {
+        "intent": "brain_games",
+        "patterns": [
+        "How can brain games improve memory?",
+        "What is the impact of brain games on memory?"
+        ],
+        "responses": [
+        "Brain games can improve memory and reduce the risk of dementia by 50%."
+        ]
+    },
+    {
+        "intent": "customer_feedback",
+        "patterns": [
+        "What feedback has the program received?",
+        "Are there any success stories or testimonials?"
+        ],
+        "responses": [
+        "The program has received positive feedback from customers who have achieved weight loss, improved health metrics, and better lifestyle changes."
+        ]
+    },
+    {
+        "intent": "associated_book",
+        "patterns": [
+        "What is the associated book with The Longevity Playbook?",
+        "Is there a book related to The Longevity Playbook?"
+        ],
+        "responses": [
+        "The Longevity Playbook is based on the book \"The Great Age Reboot: Cracking the Longevity Code for a Younger Tomorrow\" by Dr. Michael Roizen, Peter Linneman, and Albert Ratner."
+        ]
+    },
+    {
+        "intent": "subscription_offer",
+        "patterns": [
+        "Is there a subscription offer?",
+        "What is the subscription deal?"
+        ],
+        "responses": [
+        "The program offers a buy one, get one free subscription to share with a friend or loved one."
+        ]
+    },
+    {
+        "intent": "website_sections",
+        "patterns": [
+        "What sections are available on the website?",
+        "What can I explore on the website?"
+        ],
+        "responses": [
+        "The website provides options to explore the About Us, Playbook, Contact Us, and legal information sections."
+        ]
+    },      
+    {
+      "intent": "about",
+      "patterns": [
+        "What is The Longevity Playbook?"
+      ],
+      "responses": [
+        "The Longevity Playbook is a program created by Dr. Mike Roizen and his team. It offers a simple, proven method to improve health in just 5 to 15 minutes a day."
+      ]
+    },
+    {
+      "intent": "daily_time",
+      "patterns": [
+        "How much time to dedicate each day?"
+      ],
+      "responses": [
+        "You only need to dedicate 5 to 15 minutes each day to benefit from The Longevity Playbook."
+      ]
+    },
+    {
+      "intent": "pillars",
+      "patterns": [
+        "What are the 5 Pillars?"
+      ],
+      "responses": [
+        "The 5 Pillars of the Longevity Playbook are Stress Management, Diet, Brain Health, Exercise, and Sleep."
+      ]
+    },
+    {
+      "intent": "brain_games",
+      "patterns": [
+        "How can brain games improve memory?"
+      ],
+      "responses": [
+        "Brain games improve memory and reduce the risk of dementia. They can be completed in just 15 minutes each week."
+      ]
+    },
+    {
+      "intent": "track_health",
+      "patterns": [
+        "Can I track my health markers?"
+      ],
+      "responses": [
+        "Yes, you can track vital health markers to gain insights into your health progress and overall well-being."
+      ]
+    },
+    {
+      "intent": "subscription_offer",
+      "patterns": [
+        "Is there a buy one, get one free offer?"
+      ],
+      "responses": [
+        "Yes, The Longevity Playbook offers a buy one, get one free subscription offer. Purchase a subscription and receive an additional membership to share with someone you care about."
+      ]
+    },
+    {
+      "intent": "success_stories",
+      "patterns": [
+        "Are there any success stories or testimonials?"
+      ],
+      "responses": [
+        "Yes, The Longevity Playbook has received positive feedback from users. Here are a few testimonials:\n\n- Susie S. from Washington D.C. describes the program as a real game-changer, providing scientifically backed information that allows her to make attainable behavior changes.\n- Gerry S. from San Diego, CA, shares how the program helped him lose weight, lower his A1C, and achieve normal LDL and HDL metrics.\n- Sarah M. from Atlanta, GA, expresses that the app has supported her lifestyle changes, making her feel healthier and happier."
+      ]
+    },
+    {
+      "intent": "incorporate_routine",
+      "patterns": [
+        "How to incorporate the program into my routine?"
+      ],
+      "responses": [
+        "The program is designed to be easy to incorporate into your daily routine. Just dedicate 5 to 15 minutes each day to watch videos, complete lessons, quizzes, and brain games."
+      ]
+    },
+    {
+      "intent": "associated_book",
+      "patterns": [
+        "Is there a book associated with The Longevity Playbook?"
+      ],
+      "responses": [
+        "Yes, The Longevity Playbook is associated with the book \"The Great Age Reboot: Cracking the Longevity Code for a Younger Tomorrow.\""
+      ]
+    },
+    {
+      "intent": "contact_support",
+      "patterns": [
+        "How to contact the support team?"
+      ],
+      "responses": [
+        "To contact the support team, you can reach out via email at support@longevityplaybook.com."
+      ]
+    },
+    {
+      "intent": "newsletter",
+      "patterns": [
+        "Is there a newsletter available?"
+      ],
+      "responses": [
+        "Yes, there is a newsletter available called the Longevity Playbook Newsletter. It is sent twice per week and contains short, fun-to-read facts about living younger and longer."
+      ]
+    },
+    {
+      "intent": "social_media",
+      "patterns": [
+        "What are the social media channels?"
+      ],
+      "responses": [
+        "The Longevity Playbook can be found on Instagram and Facebook."
+      ]
+    },
+    {
+      "intent": "privacy_security",
+      "patterns": [
+        "What are the privacy and security measures?"
+      ],
+      "responses": [
+        "The Longevity Playbook takes privacy and security seriously. They have implemented measures to safeguard user information."
+      ]
+    },
+    {
+      "intent": "legal_terms",
+      "patterns": [
+        "Are there any legal terms or policies?"
+      ],
+      "responses": [
+        "Yes, before using the program, it's important to familiarize yourself with the legal terms and policies."
+      ]
+    }
+  ]
+  
