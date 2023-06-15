@@ -4,21 +4,29 @@ import nltk
 from nltk.tokenize import word_tokenize
 import re
 
-with open('intents.json') as file:
-    intents = json.load(file)
+# Load intents from intents.json file
+def load_intents(file_path):
+    with open(file_path) as file:
+        intents = json.load(file)
+    return intents
 
 # Preprocess the intents
-nltk.download('punkt')  # Download the tokenizer
-processed_intents = [
-    {
-        "intent": intent["intent"],
-        "patterns": [word.lower() for word in word_tokenize(" ".join(intent["patterns"]))]
-    }
-    for intent in intents
-]
+def preprocess_intents(intents):
+    processed_intents = []
+    for intent in intents:
+        processed_intent = {
+            "intent": intent["intent"],
+            "patterns": [word.lower() for word in word_tokenize(" ".join(intent["patterns"]))]
+        }
+        processed_intents.append(processed_intent)
+    return processed_intents
 
-# Define a function to recognize intents
-def recognize_intent(user_input):
+# Download NLTK tokenizer if not already downloaded
+def download_tokenizer():
+    nltk.download('punkt')
+
+# Recognize intents based on user input
+def recognize_intent(user_input, processed_intents):
     user_input = user_input.lower()
     matched_intents = []
     for intent in processed_intents:
@@ -28,19 +36,30 @@ def recognize_intent(user_input):
                 matched_intents.append(intent["intent"])
     return matched_intents
 
-# Define a function to generate responses based on intents
-def generate_response(user_input):
-    matched_intents = recognize_intent(user_input)
-    if matched_intents:
-        intent = random.choice(matched_intents)
-        for intent_data in intents:
-            if intent_data["intent"] == intent:
-                responses = intent_data["responses"]
-                return random.choice(responses)
+# Generate response based on recognized intent
+def generate_response(intent, intents):
+    intent_data = next((i for i in intents if i["intent"] == intent), None)
+    if intent_data:
+        responses = intent_data["responses"]
+        return random.choice(responses)
     return "I'm sorry, I didn't understand that."
 
 # Chatbot interaction loop
-while True:
-    user_input = input("User: ")
-    response = generate_response(user_input)
-    print("Chatbot:", response)
+def chat():
+    intents = load_intents('intents.json')
+    processed_intents = preprocess_intents(intents)
+    download_tokenizer()
+    
+    while True:
+        user_input = input("User: ")
+        matched_intents = recognize_intent(user_input, processed_intents)
+        if matched_intents:
+            intent = random.choice(matched_intents)
+            response = generate_response(intent, intents)
+            print("Chatbot:", response)
+        else:
+            print("Chatbot: I'm sorry, I didn't understand that.")
+
+# Run the chatbot
+if __name__ == "__main__":
+    chat()
